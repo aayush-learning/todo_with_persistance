@@ -1,0 +1,1 @@
+export const USER_DEFAULT = require('./user-default.png');
