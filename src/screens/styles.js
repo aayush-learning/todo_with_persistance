@@ -147,6 +147,12 @@ export default StyleSheet.create({
     borderTopColor: "grey",
     borderTopWidth: 2
   },
+  filterView:{
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    paddingVertical: 10
+  },
   LogoutText: {
     marginLeft: width * 0.05,
     fontSize: 16,
