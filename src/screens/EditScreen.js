@@ -19,8 +19,7 @@ class EditScreen extends Component {
                 title: this.props.navigation.state.params.item.title,
                 note: this.state.gist,
                 created: new Date().toString(),
-                fav: this.props.navigation.state.params.item.fav,
-                heart: this.props.navigation.state.params.item.heart
+                isCompleted: false
             }
             this.props.taskDataUpdate(task);
             this.props.navigation.pop(2);

@@ -36,9 +36,6 @@ class HomeScreen extends PureComponent {
   constructor(props) {
     super(props);
     this.renderSeparator = this.renderSeparator.bind(this);
-    // this.updateState = this.updateState.bind(this);
-    // this.pushNote = this.pushNote.bind(this);
-    // this.updateNote = this.updateNote.bind(this);
     this.setScrollEnabled = this.setScrollEnabled.bind(this);
     this.searchTask = this.searchTask.bind(this);
     this.renderEmptyComponent = this.renderEmptyComponent.bind(this);
@@ -71,31 +68,6 @@ class HomeScreen extends PureComponent {
     return <View style={styles.separatorStyle} />;
   }
 
-  //   updateNote(item) {
-  //     let data = [...this.state.data];
-  //     data.forEach(i => {
-  //       if (i.title == item.title) {
-  //         i.note = item.note;
-  //       }
-  //     });
-  //     this.setState({
-  //       data: data
-  //     });
-  //     this.props.navigation.dispatch(NavigationActions.back());
-  //     this.props.navigation.dispatch(NavigationActions.back());
-  //   }
-
-  //   pushNote(item) {
-  //     let data = [...this.state.data];
-  //     if (item.title != "" && item.note != "") {
-  //       data.push(item);
-  //       this.setState({
-  //         data: data
-  //       });
-  //     }
-  //     this.props.navigation.dispatch(NavigationActions.back());
-  //   }
-
   componentDidMount() {
     let headerRight = (
       <TouchableOpacity
@@ -122,26 +94,6 @@ class HomeScreen extends PureComponent {
       headerRight
     });
   }
-
-  //   updateState(title, type) {
-  //     if (type == "delete") {
-  //       const data = this.state.data.filter(item => item.title != title);
-  //       this.setState({
-  //         data: data
-  //       });
-  //     } else {
-  //       let data = [...this.state.data];
-  //       data.forEach(item => {
-  //         if (item.title == title) {
-  //           type == "fav" ? (item.fav = !item.fav) : (item.heart = !item.heart);
-  //         }
-  //       });
-
-  //       this.setState({
-  //         data: data
-  //       });
-  //     }
-  //   }
 
   setScrollEnabled(enable) {
     this.setState({

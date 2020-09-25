@@ -38,8 +38,7 @@ class AddScreen extends Component {
         title: this.state.title,
         note: this.state.gist,
         created: new Date().toString(),
-        fav: false,
-        heart: false
+        isCompleted: false
       };
       this.props.taskDataCreate(task);
       this.props.navigation.goBack();
