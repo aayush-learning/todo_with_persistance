@@ -7,7 +7,8 @@ import {
   TASKDATA_DELETE_SUCCESS,
   TASKDATA_CREATE_FAILURE,
   TASKDATA_CREATE_PROGRESS,
-  TASKDATA_CREATE_SUCCESS
+  TASKDATA_CREATE_SUCCESS,
+  DELETE_ALL_TASKS
 } from "../actions/taskAction";
 
 const intialState = {
@@ -67,6 +68,11 @@ export function task(state = intialState, action) {
      
       oldState.taskError = action.data;
       oldState.isTaskLoading = false;
+      return oldState;
+
+    case DELETE_ALL_TASKS:
+     
+      oldState.task = [];
       return oldState;
     default:
       return state;

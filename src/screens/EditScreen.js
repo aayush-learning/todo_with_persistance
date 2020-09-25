@@ -50,7 +50,7 @@ class EditScreen extends Component {
                     onChangeText={(gist) => this.setState({ gist })}
                     value={this.state.gist}
                     multiline={true}
-                    placeholder=">Update Gist of Task"
+                    placeholder="> Update Gist of Task"
                     placeholderTextColor="#8d8a7d"
                     underlineColorAndroid="black" />
             </View>

@@ -12,6 +12,8 @@ export const TASKDATA_CREATE_FAILURE = "TASKDATA_CREATE_FAILURE";
 export const TASKDATA_CREATE_PROGRESS = "TASKDATA_CREATE_PROGRESS";
 export const TASKDATA_CREATE_SUCCESS = "TASKDATA_CREATE_SUCCESS";
 
+export const DELETE_ALL_TASKS="DELETE_ALL_TASKS";
+
 
 export const taskDataUpdateProgress = () => ({
   type: TASKDATA_UPDATE_PROGRESS
@@ -71,4 +73,9 @@ export const taskDataDeleteFailure = error => ({
 export const taskDataDelete = id => ({
   type: TASKDATA_DELETE_SUCCESS,
   data: id
+});
+
+
+export const deleteAllTasks = () => ({
+  type: DELETE_ALL_TASKS
 });

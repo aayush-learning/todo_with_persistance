@@ -65,7 +65,7 @@ class AddScreen extends Component {
           onChangeText={title => this.setState({ title })}
           value={this.state.title}
           multiline={true}
-          placeholder=">Title of Task"
+          placeholder="> Title of Task"
           placeholderTextColor="#8d8a7d"
           underlineColorAndroid="black"
         />
@@ -74,7 +74,7 @@ class AddScreen extends Component {
           onChangeText={gist => this.setState({ gist })}
           value={this.state.gist}
           multiline={true}
-          placeholder=">Gist of Task"
+          placeholder="> Gist of Task"
           placeholderTextColor="#8d8a7d"
           underlineColorAndroid="black"
         />

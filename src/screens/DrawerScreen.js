@@ -7,6 +7,7 @@ import { USER_DEFAULT } from "../assets/index";
 import styles from "./styles";
 import { userSelector } from "../redux/selectors/userSelector";
 import { userDataDelete } from "../redux/actions/userAction";
+import { deleteAllTasks } from "../redux/actions/taskAction";
 
 
 class DrawerScreen extends Component {
@@ -17,6 +18,7 @@ class DrawerScreen extends Component {
 
   deleteUserInfo(){
     this.props.userDataDelete();
+    this.props.deleteAllTasks();
   }
 
   render() {
@@ -68,5 +70,5 @@ const mapStateToProps = createStructuredSelector({
 
 export default connect(
   mapStateToProps,
-   {  userDataDelete }
+   {  userDataDelete, deleteAllTasks }
 )(DrawerScreen);
